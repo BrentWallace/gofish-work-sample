@@ -51,6 +51,9 @@ if ( ! function_exists( 'gofish_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'gofish' ),
+				'footer-menu-1' => esc_html__('Footer Menu 1', 'gofish'),
+				'footer-menu-2' => esc_html__('Footer Menu 2', 'gofish'),
+				'footer-menu-3' => esc_html__('Footer Menu 3', 'gofish'),
 			)
 		);
 
