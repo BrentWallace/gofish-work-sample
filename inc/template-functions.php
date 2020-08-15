@@ -36,9 +36,9 @@ function gofish_pingback_header() {
 }
 add_action( 'wp_head', 'gofish_pingback_header' );
 
-/**
- * Register Custom Navigation Walker
- */
+
+// Register Custom Navigation Walker
+
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
@@ -72,7 +72,6 @@ function create_posttype() {
         )
     );
 }
-// Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
 
 // Function to add classes to <li> in nav menus
