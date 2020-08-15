@@ -54,6 +54,7 @@ if ( ! function_exists( 'gofish_setup' ) ) :
 				'footer-menu-1' => esc_html__('Footer Menu 1', 'gofish'),
 				'footer-menu-2' => esc_html__('Footer Menu 2', 'gofish'),
 				'footer-menu-3' => esc_html__('Footer Menu 3', 'gofish'),
+				'social-and-privacy' => esc_html__('Social and Privacy', 'gofish'),
 			)
 		);
 
@@ -191,3 +192,43 @@ function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+// Register the services post type
+function create_posttype() {
+ 
+    register_post_type( 'services',
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'services'),
+            'show_in_rest' => true,
+        )
+	);
+	register_post_type( 'awards',
+        array(
+            'labels' => array(
+                'name' => __( 'Awards' ),
+                'singular_name' => __( 'Award' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'awards'),
+            'show_in_rest' => true,
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+// Function to add classes to <li> in nav menus
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);

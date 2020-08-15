@@ -11,24 +11,70 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gofish' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'gofish' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gofish' ), 'gofish', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+  <div class="site-info">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-6 text-center">
+          <h3 class="">Let's Get in Touch</h3>
+          <button class="btn btn-oval btn-gofish-outline my-4">Contact Us</button>
+          <p class="text-gofish">(703) 596-1353</p>
+        </div>
+        <div class="col-md-2">
+          <?php
+          wp_nav_menu(array(
+            'theme_location'    => 'footer-menu-1',
+            'depth'             => 1,
+			'menu_class'        => 'list-unstyled',
+			'container'			=> 'ul',
+          ));
+          ?>
+        </div>
+        <div class="col-md-2">
+          <?php
+          wp_nav_menu(array(
+            'theme_location'    => 'footer-menu-2',
+            'depth'             => 1,
+			'menu_class'        => 'list-unstyled',
+			'container'			=> 'ul',
+          ));
+          ?>
+        </div>
+        <div class="col-md-2">
+          <?php
+          wp_nav_menu(array(
+            'theme_location'    => 'footer-menu-3',
+            'depth'             => 1,
+			'menu_class'        => 'list-unstyled',
+			'container'			=> 'ul',
+          ));
+          ?>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-6 py-2"><?php the_custom_logo() ?></div>
+        <div class="col-md-6">
+          <?php
+          wp_nav_menu(array(
+            'theme_location'    => 'social-and-privacy',
+            'depth'             => 1,
+			'menu_class'        => 'list-inline py-4 float-right',
+			'container'			=> 'ul',
+            'add_li_class'      => 'list-inline-item mx-2',
+          ));
+          ?>
+        </div>
+      </div>
+    </div>
+  </div><!-- .site-info -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
