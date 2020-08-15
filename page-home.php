@@ -1,6 +1,7 @@
 <?php
 $fields = get_fields();
 $jumbotron = $fields['jumbotron'];
+$clients_block = $fields['clients_block'];
 get_header();
 ?>
 
@@ -17,7 +18,24 @@ get_header();
     </div>
   </section>
   <!-- End Jubmotron -->
-  </main>
+
+  <!-- Client Showcase -->
+  <section class="container-fluid">
+    <div class="row my-4">
+      <div class="col-md-12 col-lg-2 py-4 text-center">
+        <p class="font-weight-bold"><?php echo $clients_block['left_text'] ?></p>
+      </div>
+      <div class="col text-center">
+        <?php echo $clients_block['logos']; ?>
+      </div>
+      <div class="col-md-12 col-lg-2 py-4 text-center">
+        <p class="font-weight-bold"><?php echo $clients_block['right_text']; ?></p>
+      </div>
+    </div>
+  </section>
+  <!-- End Client Showcase -->
+
+</main>
 <!-- #main -->
 
 <?php
