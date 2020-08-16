@@ -3,6 +3,7 @@ $fields = get_fields();
 $jumbotron = $fields['jumbotron'];
 $clients_block = $fields['clients_block'];
 $services_block = $fields['services_block'];
+$awards_block = $fields['awards_block'];
 get_header();
 ?>
 
@@ -76,6 +77,37 @@ get_header();
     <!-- End Services Post Loop -->
   </section>
   <!-- End Services Section -->
+
+  <!-- Awards Section -->
+  <section class="container">
+    <div class="row py-4">
+      <div class="col text-center">
+        <p class="display-4"><?php echo $awards_block['awards_header']; ?></p>
+        <?php echo $awards_block['awards_content']; ?>
+      </div>
+    </div>
+    <div class="row py-4">
+      <?php
+      $posts = get_posts(array(
+        'post_type' => 'awards',
+        'posts_per_page' => '4',
+      ));
+
+      if ($posts) :
+        foreach ($posts as $post) :
+          setup_postdata($post); ?>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <img src="<?php the_field('award_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
+            <p class="h3"><?php the_title(); ?></p>
+            <p class="text-gofish"><?php the_content(); ?></p>
+          </div>
+      <?php endforeach;
+        wp_reset_postdata();
+      endif;
+      ?>
+    </div>
+  </section>
+  <!-- End Awards Section -->
 
 </main>
 <!-- #main -->
