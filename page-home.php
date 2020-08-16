@@ -2,6 +2,7 @@
 $fields = get_fields();
 $jumbotron = $fields['jumbotron'];
 $clients_block = $fields['clients_block'];
+$services_block = $fields['services_block'];
 get_header();
 ?>
 
@@ -34,6 +35,47 @@ get_header();
     </div>
   </section>
   <!-- End Client Showcase -->
+
+  <!-- Services Section -->
+  <section>
+    <div class="container">
+      <div class="row my-4">
+        <div class="col">
+          <h2 class="display-4 text-center"><?php echo $services_block['services_header']; ?></h2>
+          <?php echo $services_block['services_text']; ?>
+        </div>
+      </div>
+    </div>
+    <!-- Services Post Loop -->
+    <div class="container-fluid">
+      <div class="row">
+        <?php
+        $posts = get_posts(array(
+          'post_type' => 'services',
+          'posts_per_page' => '-1',
+        ));
+        if ($posts) :
+          foreach ($posts as $post) :
+            setup_postdata($post); ?>
+            <div class="col-md-3 text-center p-4">
+              <img src="<?php the_field('service_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
+              <p class="h4"><?php the_title(); ?></p>
+              <p><?php the_content(); ?></p>
+              <a href="<?php the_permalink(); ?>">Learn More &rarr;</a>
+            </div>
+        <?php endforeach;
+          wp_reset_postdata();
+        endif;
+        ?>
+        <div class="col-md-3 text-center p-4">
+          <p class="h2 m-4 pt-4">See What Else We Can Do</p>
+          <button class="btn btn-gofish-outline">More Services</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Services Post Loop -->
+  </section>
+  <!-- End Services Section -->
 
 </main>
 <!-- #main -->
