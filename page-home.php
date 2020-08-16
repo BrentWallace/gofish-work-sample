@@ -4,6 +4,7 @@ $jumbotron = $fields['jumbotron'];
 $clients_block = $fields['clients_block'];
 $services_block = $fields['services_block'];
 $awards_block = $fields['awards_block'];
+$about_us_block = $fields['about_us_block'];
 get_header();
 ?>
 
@@ -108,6 +109,28 @@ get_header();
     </div>
   </section>
   <!-- End Awards Section -->
+
+  <!-- About Us Section -->
+  <section class="container-fluid" style="background-color:#e8f0f8;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12">
+          <div class="p-4">
+            <?php echo $about_us_block['about_us_content']; ?>
+          </div>
+          <img src="<?php echo $about_us_block['left_image']; ?>" alt="Image 1" class="img-fluid w-100 py-3">
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <img src="<?php echo $about_us_block['center_image']; ?>" alt="Image 2" class="img-fluid w-100 py-3">
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <img src="<?php echo $about_us_block['upper_right_image']; ?>" alt="" class="img-fluid w-100 py-3">
+          <img src="<?php echo $about_us_block['lower_right_image']; ?>" alt="" class="img-fluid w-100 py-3">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
 
 </main>
 <!-- #main -->
