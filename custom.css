@@ -1,0 +1,98 @@
+/* Home Classes */
+#home-hero {
+	background-size: cover;
+	background-position:center center;
+}
+
+/* Form Styles */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"]{
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	padding:0.5rem
+}
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus{
+	border-bottom:1px solid #659cd1;
+	transition:0.2s;
+}
+
+.wpcf7 textarea {
+	padding:0.5rem;
+}
+
+.wpcf7 textarea:focus {
+	border:1px solid #659cd1;
+	transition: 0.2s;
+}
+
+.wpcf7 input[type="submit"]{
+	background-color:#659cd1;
+	color:#fff;
+	border-color:#659cd1;
+	border-radius:30px;
+	padding:1rem 4rem;
+}
+
+.wpcf7 input[type="submit"]:hover{
+	background-color: #6c757d;
+	border-color: #6c757d;
+	transition:0.2s;
+}
+
+/* Utility Classes */
+section {
+	margin-top:5rem;
+	margin-bottom:5rem;
+}
+
+.bg-gofish {
+	background-color: #659cd1;
+}
+
+.text-gofish {
+	color: #659cd1;
+}
+
+.border-gofish {
+	border-color: #659cd1;
+}
+
+.btn-gofish {
+	background-color: #659cd1;
+	color:#fff;
+	padding:1rem 3rem;
+}
+.btn-gofish:hover {
+	background-color: #6c757d;
+	color:#fff;
+}
+
+.btn-gofish-outline {
+	border-color: #659cd1;
+	border-radius: 30px;
+	padding:1rem 3rem;
+	color: #659cd1;
+}
+
+.btn-gofish-outline:hover {
+	border-color: #6c757d;
+	background-color: #6c757d;
+	border-radius: 30px;
+	color: #fff;
+}
+
+.btn-oval {
+	border-radius: 30px;
+}
+
+.list-unstyled > li > a {
+	text-decoration:none;
+	color:#000;
+}
+
+.list-unstyled > li > a:hover {
+	text-decoration:none;
+	color:#666;
+}
