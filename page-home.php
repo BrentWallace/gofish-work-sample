@@ -5,6 +5,7 @@ $clients_block = $fields['clients_block'];
 $services_block = $fields['services_block'];
 $awards_block = $fields['awards_block'];
 $about_us_block = $fields['about_us_block'];
+$contact_us_block = $fields['contact_us_block'];
 get_header();
 ?>
 
@@ -131,6 +132,20 @@ get_header();
     </div>
   </section>
   <!-- End About Us Section -->
+
+  <!-- Contact Section -->
+  <section class="container">
+    <div class="row py-4">
+      <div class="col-md-6">
+        <?php echo $contact_us_block['contact_us_content']; ?>
+      </div>
+      <div class="col-md-6">
+        <?php echo do_shortcode('[contact-form-7 id="86" title="Contact form 1"]'); ?>
+      </div>
+    </div>
+    <hr />
+  </section>
+  <!-- End Contact Section -->
 
 </main>
 <!-- #main -->
