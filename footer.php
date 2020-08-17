@@ -23,6 +23,7 @@
         </div>
         <div class="col-md-2">
           <?php
+          // Fetch and loop over footer-menu-1
           wp_nav_menu(array(
             'theme_location'    => 'footer-menu-1',
             'depth'             => 1,
@@ -33,6 +34,7 @@
         </div>
         <div class="col-md-2">
           <?php
+          // Fetch and loop over footer-menu-2
           wp_nav_menu(array(
             'theme_location'    => 'footer-menu-2',
             'depth'             => 1,
@@ -43,6 +45,7 @@
         </div>
         <div class="col-md-2">
           <?php
+          // Fetch and loop over footer-menu-3
           wp_nav_menu(array(
             'theme_location'    => 'footer-menu-3',
             'depth'             => 1,
@@ -59,6 +62,7 @@
         <div class="col-lg-6 text-center text-lg-left py-2"><?php the_custom_logo() ?></div>
         <div class="col-lg-6">
           <?php
+          // Fetch and loop over social-and-privacy
           wp_nav_menu(array(
             'theme_location'    => 'social-and-privacy',
             'depth'             => 1,
