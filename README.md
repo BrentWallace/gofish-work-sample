@@ -9,6 +9,12 @@ This theme depends on a handful of additional tools and pieces of software to fu
 * [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker) - An extension of the Wordpress walker class that is needed to correctly apply the appropriate nav CSS classes to the navmenu.
 * [Advanced Custom Fields](https://www.advancedcustomfields.com/) - Creates the fields needed in the wp-admin area to enter custom content.
 
+In addition to the essential plugins listed above, I've also included the following:
+* Smush - Automatic image compression.
+* Contact Form 7 - Contact form management plugin. See contact form section below for details.
+* WP Super Cache - Page caching and other performance improvements.
+* Yoast SEO - SEO management plugin.
+
 ## Menu Locations
 The theme provides six Wordpress editable menu locations:
 * Primary - The main menu at the top of the page.
@@ -19,7 +25,7 @@ The theme provides six Wordpress editable menu locations:
 * Social and Privacy - The row of links and icons at the bottom of the footer section. The icons are added by creating a custom link, then adding an <img> tag as the link text.
 
 ## Custom Post Types
-A custom post type was created for the services and awards sections. A custom field was attached to each of these post types to hold the icon that is displayed along with the post title and content.
+Custom post types were created for the services and awards sections. A custom field was attached to each of these post types to hold the icon that is displayed along with the post title and content.
 
 ## Page Content Sections
 The homepage content that is not part of the header or footer is contained in the one-page template page-home.php. The primary wordpress block editor content is ignored in favor of the ACF fields attached to the homepage. The ACF fields are divided into groups with the ACF 'group' field type, with sub-fields mapped to corresponding page elements. The fields are queried on the page template with the ``` get_fields() ``` function, which returns an array that is then broken down into smaller arrays by block for easier referencing in the template.
@@ -61,5 +67,5 @@ This the area to the left of the contact form. The ACF Fields for this section a
 
 ## Additional Page Content
 ### Contact Form
-I've learned that GoFish typically uses gravity forms, but lacking a license for their software to that I decided to use another form plugin called Contact Form 7. The form is injected into the template using the ``` do_shortcode() ``` function. The default form styling is overridden by the custom styles located in custom.css.
+I've learned that GoFish typically uses gravity forms, but lacking a license for their software I decided to use another form plugin called Contact Form 7. The form is injected into the template using the ``` do_shortcode() ``` function. The default form styling is overridden by the custom styles located in custom.css.
 
