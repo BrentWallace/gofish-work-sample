@@ -1,3 +1,8 @@
+/* Sitewide */
+body {
+	color:#284157;
+}
+
 /* Home Classes */
 #home-hero {
 	background-size: cover;
@@ -39,6 +44,11 @@
 	background-color: #6c757d;
 	border-color: #6c757d;
 	transition:0.2s;
+}
+
+/* Typography Classes */
+.display-1, .display-2, .display-3, .display-4, .h1-serif, .h2-serif, .h3-serif, .h4-serif, .h5-serif, .h6-serif {
+	font-family: utopia-std;
 }
 
 /* Utility Classes */
