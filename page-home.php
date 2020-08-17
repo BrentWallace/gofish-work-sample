@@ -89,13 +89,8 @@ get_header();
     </div>
     <div class="row py-4">
       <?php
-      $posts = get_posts(array(
-        'post_type' => 'awards',
-        'posts_per_page' => '4',
-      ));
-
-      if ($posts) :
-        foreach ($posts as $post) :
+      if ($awards_block['awards']) :
+        foreach ($awards_block['awards'] as $post) :
           setup_postdata($post); ?>
           <div class="col-lg-3 col-md-6 col-sm-12 text-center">
             <img src="<?php the_field('award_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
