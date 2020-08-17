@@ -57,12 +57,6 @@
             'walker'            => new WP_Bootstrap_Navwalker(),
           ))
           ?>
-          <!--<ul id="menu-secondary" class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link">Contact Us</a>
-            </li>
-            <li class="nav-item"><button class="btn btn-outline-secondary btn-oval">Request a Proposal</button></li>
-          </ul>-->
         </div>
       </nav>
     </header><!-- #masthead -->
