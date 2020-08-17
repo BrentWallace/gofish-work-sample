@@ -116,11 +116,11 @@ get_header();
           <img src="<?php echo $about_us_block['left_image']; ?>" alt="Image 1" class="img-fluid w-100 py-3">
         </div>
         <div class="col-lg-4 col-md-12">
-          <img src="<?php echo $about_us_block['center_image']; ?>" alt="Image 2" class="img-fluid w-100 py-3">
+          <img src="<?php echo $about_us_block['center_image']; ?>" alt="Image 2" class="img-fluid w-100 h-100 py-3">
         </div>
         <div class="col-lg-3 col-md-12">
-          <img src="<?php echo $about_us_block['upper_right_image']; ?>" alt="" class="img-fluid w-100 py-3">
-          <img src="<?php echo $about_us_block['lower_right_image']; ?>" alt="" class="img-fluid w-100 py-3">
+          <img src="<?php echo $about_us_block['upper_right_image']; ?>" alt="" class="img-fluid w-100 h-50 py-3">
+          <img src="<?php echo $about_us_block['lower_right_image']; ?>" alt="" class="img-fluid w-100 h-50 py-3">
         </div>
       </div>
     </div>
