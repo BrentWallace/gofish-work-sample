@@ -47,12 +47,22 @@
             'walker'            => new WP_Bootstrap_Navwalker(),
           ));
           ?>
-          <ul id="menu-secondary" class="navbar-nav">
+          <?php
+          wp_nav_menu(array(
+            'theme_location'    => 'menu-2',
+            'depth'             => 2,
+            'menu_class'        => 'navbar-nav',
+            'container'         => 'ul',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+          ))
+          ?>
+          <!--<ul id="menu-secondary" class="navbar-nav">
             <li class="nav-item">
               <a href="" class="nav-link">Contact Us</a>
             </li>
             <li class="nav-item"><button class="btn btn-outline-secondary btn-oval">Request a Proposal</button></li>
-          </ul>
+          </ul>-->
         </div>
       </nav>
     </header><!-- #masthead -->
