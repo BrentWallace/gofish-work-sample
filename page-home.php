@@ -18,7 +18,7 @@ get_header();
         <div class="d-none d-md-block col-6 bg-light my-4 p-4">
           <?php echo $jumbotron['jumbotron_content']; ?>
         </div>
-        <div class="d-block d-md-none col text-center bg-light my-4 p-4">
+        <div class="d-block d-md-none col bg-light my-4 p-4">
           <?php echo $jumbotron['jumbotron_content']; ?>
         </div>
       </div>
@@ -103,7 +103,7 @@ get_header();
           setup_postdata($post); ?>
           <div class="col-lg-3 col-md-6 col-sm-12 text-center">
             <img src="<?php the_field('award_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
-            <p class="h3"><?php the_title(); ?></p>
+            <p class="h4 h4-serif"><?php the_title(); ?></p>
             <p class="text-gofish"><?php the_content(); ?></p>
           </div>
       <?php endforeach;
