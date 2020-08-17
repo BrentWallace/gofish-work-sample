@@ -7,7 +7,7 @@ var secondaryMenuItems = secondaryMenu.querySelectorAll('#menu-secondary>*');
 // Wrap the last menu item text with a button element
 var lastItem = secondaryMenuItems[secondaryMenuItems.length-1];
 var newButton = document.createElement('button');
-newButton.classList.add('btn', 'btn-outline-secondary', 'btn-oval');
+newButton.classList.add('btn', 'btn-gofish-outline-dark', 'btn-oval');
 newButton.innerText = lastItem.innerText;
 secondaryMenu.replaceChild(newButton, lastItem);
 

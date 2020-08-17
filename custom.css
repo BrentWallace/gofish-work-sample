@@ -56,6 +56,10 @@ body {
 	color:#284157;
 }
 
+.nav-link {
+	color:#284157 !important;
+}
+
 /* Utility Classes */
 section {
 	margin-top:5rem;
@@ -95,6 +99,19 @@ section {
 	border-color: #6c757d;
 	background-color: #6c757d;
 	border-radius: 30px;
+	color: #fff;
+}
+
+.btn-gofish-outline-dark {
+	border-color:#284157;
+	border-radius: 30px;
+	color: #284157;
+}
+
+.btn-gofish-outline-dark:hover {
+	border-color:#284157;
+	border-radius: 30px;
+	background: #284157;
 	color: #fff;
 }
 
