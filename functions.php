@@ -147,10 +147,11 @@ function gofish_scripts() {
 	wp_enqueue_style( 'gofish-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'gofish-style', 'rtl', 'replace' );
 
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), false, true );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), false, true );
 
-	wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/custom.css' );
+	wp_enqueue_style( 'custom', get_template_directory_uri() . '/custom.css' );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', false, false, true );
 
 	wp_enqueue_script( 'gofish-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

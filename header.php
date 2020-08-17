@@ -28,7 +28,7 @@
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gofish'); ?></a>
     <!-- Masthead -->
     <header id="masthead" class="site-header">
-      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" role="navigation">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" role="navigation">
         <div class="container my-2">
           <!-- Brand and toggle get grouped for better mobile display -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gofish-navbar-collapse-1" aria-controls="gofish-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
@@ -47,13 +47,11 @@
             'walker'            => new WP_Bootstrap_Navwalker(),
           ));
           ?>
-          <ul class="navbar-nav">
+          <ul id="menu-secondary" class="navbar-nav">
             <li class="nav-item">
               <a href="" class="nav-link">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <button class="btn btn-outline-secondary btn-oval">Request a Proposal</button>
-            </li>
+            <li class="nav-item"><button class="btn btn-outline-secondary btn-oval">Request a Proposal</button></li>
           </ul>
         </div>
       </nav>
