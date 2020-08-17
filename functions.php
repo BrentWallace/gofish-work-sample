@@ -156,6 +156,7 @@ function gofish_scripts() {
 	wp_enqueue_style( 'custom', get_template_directory_uri() . '/custom.css' );
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', false, false, true );
 	wp_enqueue_style( 'typekit-utopia', 'https://use.typekit.net/ydd4qkt.css' );
+	wp_enqueue_style( 'google-font-sen', 'https://fonts.googleapis.com/css2?family=Sen&display=swap' );
 
 	wp_enqueue_script( 'gofish-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

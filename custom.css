@@ -1,6 +1,7 @@
 /* Sitewide */
 body {
 	color:#284157;
+	font-family: 'Sen', sans-serif;
 }
 
 /* Home Classes */
@@ -49,6 +50,10 @@ body {
 /* Typography Classes */
 .display-1, .display-2, .display-3, .display-4, .h1-serif, .h2-serif, .h3-serif, .h4-serif, .h5-serif, .h6-serif {
 	font-family: utopia-std;
+}
+
+#menu-social-and-privacy>li>a {
+	color:#284157;
 }
 
 /* Utility Classes */
