@@ -22,7 +22,7 @@ The theme provides six Wordpress editable menu locations:
 * Footer 1 - The leftmost column of links in the footer section.
 * Footer 2 - The center column of links in the footer section.
 * Footer 3 - The rightmost column of links in the footer section.
-* Social and Privacy - The row of links and icons at the bottom of the footer section. The icons are added by creating a custom link, then adding an <img> tag as the link text.
+* Social and Privacy - The row of links and icons at the bottom of the footer section. The icons are added by creating a custom link, then adding an img tag as the link text.
 
 ## Custom Post Types
 Custom post types were created for the services and awards sections. A custom field was attached to each of these post types to hold the icon that is displayed along with the post title and content.
@@ -57,7 +57,7 @@ The section below the services where awards are displayed. Structure closely res
 This is the section below the awards where a small text area is rendered alongside a grid of images. The ACF fields for this section are:
 * About Us Content - ACF WYSIWYG Field - The content that is rendered in the upper-left text field.
 * Left Image - ACF Image Field - This is the image to be displayed below the content field.
-* Center Image - ACF Image Field - This is the image in the center column of the grid. It utilizes the full height of the <div>, so a vertically-oriented image works best.
+* Center Image - ACF Image Field - This is the image in the center column of the grid. It utilizes the full height of the div, so a vertically-oriented image works best.
 * Upper Right Image - ACF Image Field - This is the image in the upper right corner of the grid. Set to use 50% of the height, so a square aspect ratio works well here.
 * Lower Right Image - ACF Image Field - This is the image in the lower right corner of the grid. Set to use the remaining 50% of the height, so another square aspect ratio works here.
 
