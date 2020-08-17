@@ -51,6 +51,7 @@ if ( ! function_exists( 'gofish_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'gofish' ),
+				'menu-2' => esc_html__( 'Secondary', 'gofish' ),
 				'footer-menu-1' => esc_html__('Footer Menu 1', 'gofish'),
 				'footer-menu-2' => esc_html__('Footer Menu 2', 'gofish'),
 				'footer-menu-3' => esc_html__('Footer Menu 3', 'gofish'),
@@ -147,11 +148,14 @@ function gofish_scripts() {
 	wp_enqueue_style( 'gofish-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'gofish-style', 'rtl', 'replace' );
 
+	// Bootstrap
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), false, true );
 
+	// Custom styles and scripts
 	wp_enqueue_style( 'custom', get_template_directory_uri() . '/custom.css' );
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', false, false, true );
+	wp_enqueue_style( 'typekit-utopia', 'https://use.typekit.net/ydd4qkt.css' );
 
 	wp_enqueue_script( 'gofish-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
