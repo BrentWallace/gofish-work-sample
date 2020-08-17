@@ -56,12 +56,8 @@ get_header();
     <div class="container-fluid">
       <div class="row">
         <?php
-        $posts = get_posts(array(
-          'post_type' => 'services',
-          'posts_per_page' => '-1',
-        ));
-        if ($posts) :
-          foreach ($posts as $post) :
+        if ($services_block['services']) :
+          foreach ($services_block['services'] as $post) :
             setup_postdata($post); ?>
             <div class="col-md-3 text-center p-4">
               <img src="<?php the_field('service_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
