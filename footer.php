@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -12,7 +13,7 @@
 ?>
 
 <footer id="colophon" class="site-footer">
-  <div class="site-info">
+  <div class="site-info mt-n4">
     <div class="container">
       <div class="row py-4">
         <div class="col-md-6 text-center">
@@ -25,8 +26,8 @@
           wp_nav_menu(array(
             'theme_location'    => 'footer-menu-1',
             'depth'             => 1,
-			'menu_class'        => 'list-unstyled',
-			'container'			=> 'ul',
+            'menu_class'        => 'list-unstyled ml-0 text-center text-md-left',
+            'container'         => 'ul',
           ));
           ?>
         </div>
@@ -35,8 +36,8 @@
           wp_nav_menu(array(
             'theme_location'    => 'footer-menu-2',
             'depth'             => 1,
-			'menu_class'        => 'list-unstyled',
-			'container'			=> 'ul',
+            'menu_class'        => 'list-unstyled ml-0 text-center text-md-left',
+            'container'         => 'ul',
           ));
           ?>
         </div>
@@ -45,8 +46,8 @@
           wp_nav_menu(array(
             'theme_location'    => 'footer-menu-3',
             'depth'             => 1,
-			'menu_class'        => 'list-unstyled',
-			'container'			=> 'ul',
+            'menu_class'        => 'list-unstyled ml-0 text-center text-md-left',
+            'container'         => 'ul',
           ));
           ?>
         </div>
@@ -55,14 +56,14 @@
     </div>
     <div class="container">
       <div class="row py-4">
-        <div class="col-md-6 py-2"><?php the_custom_logo() ?></div>
-        <div class="col-md-6">
+        <div class="col-lg-6 text-center text-lg-left py-2"><?php the_custom_logo() ?></div>
+        <div class="col-lg-6">
           <?php
           wp_nav_menu(array(
             'theme_location'    => 'social-and-privacy',
             'depth'             => 1,
-			'menu_class'        => 'list-inline py-4 float-right',
-			'container'			=> 'ul',
+            'menu_class'        => 'list-inline py-4 text-center text-lg-right ml-0',
+            'container'         => 'ul',
             'add_li_class'      => 'list-inline-item mx-2',
           ));
           ?>
