@@ -15,10 +15,10 @@ get_header();
   <section class="jumbotron jumbotron-fluid" id="home-hero" style="background-image:url('<?php echo $jumbotron['jumbotron_background']; ?>');">
     <div class="container-fluid">
       <div class="row py-4">
-        <div class="d-none d-md-block col-6 bg-light my-4 p-4">
+        <div class="d-none d-md-block col-6 bg-white my-4 p-4">
           <?php echo $jumbotron['jumbotron_content']; ?>
         </div>
-        <div class="d-block d-md-none col bg-light my-4 p-4">
+        <div class="d-block d-md-none col bg-white my-4 p-4">
           <?php echo $jumbotron['jumbotron_content']; ?>
         </div>
       </div>
