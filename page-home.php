@@ -27,7 +27,7 @@ get_header();
   <!-- End Jubmotron -->
 
   <!-- Client Showcase -->
-  <section class="container-fluid">
+  <section id="client-section" class="container-fluid">
     <div class="row my-4">
       <div class="col-md-12 col-lg-2 py-4 text-center">
         <p class="font-weight-bold"><?php echo $clients_block['left_text'] ?></p>
@@ -43,7 +43,7 @@ get_header();
   <!-- End Client Showcase -->
 
   <!-- Services Section -->
-  <section>
+  <section id="services-section">
     <div class="container">
       <div class="row my-4">
         <div class="col">
@@ -54,12 +54,14 @@ get_header();
     </div>
     <!-- Services Post Loop -->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row mx-4">
         <?php
+        // Check if services block has services selected to be displayed
         if ($services_block['services']) :
+          // Loop over services and build the results
           foreach ($services_block['services'] as $post) :
             setup_postdata($post); ?>
-            <div class="col-md-3 text-center p-4">
+            <div class="col-md-3 text-center p-4 service">
               <img src="<?php the_field('service_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
               <p class="h4"><?php the_title(); ?></p>
               <p><?php the_content(); ?></p>
@@ -69,7 +71,7 @@ get_header();
           wp_reset_postdata();
         endif;
         ?>
-        <div class="col-md-3 text-center p-4">
+        <div class="col-md-3 text-center p-4 service">
           <p class="h2 m-4 pt-4">See What Else We Can Do</p>
           <button class="btn btn-gofish-outline">More Services</button>
         </div>
@@ -89,13 +91,19 @@ get_header();
     </div>
     <div class="row py-4">
       <?php
+      // Check if awards block has awards posts to be displayed
       if ($awards_block['awards']) :
+        // Loop over awards and build the results
         foreach ($awards_block['awards'] as $post) :
           setup_postdata($post); ?>
-          <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-            <img src="<?php the_field('award_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
-            <p class="h4 h4-serif mx-4"><?php the_title(); ?></p>
-            <p class="text-gofish"><?php the_content(); ?></p>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center my-2">
+            <img src="<?php the_field('award_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid mb-n4">
+            <div class="award-bg p-4">
+              <div class="mt-4">
+                <p class="h4 h4-serif mx-4"><?php the_title(); ?></p>
+                <p class="text-gofish"><?php the_content(); ?></p>
+              </div>
+            </div>
           </div>
       <?php endforeach;
         wp_reset_postdata();
