@@ -63,7 +63,7 @@ get_header();
             setup_postdata($post); ?>
             <div class="col-md-3 text-center p-4 service">
               <img src="<?php the_field('service_icon'); ?>" alt="<?php the_title(); ?>" class="img-fluid my-4">
-              <p class="h4"><?php the_title(); ?></p>
+              <p class="h5 font-weight-bold"><?php the_title(); ?></p>
               <p><?php the_content(); ?></p>
               <a href="<?php the_permalink(); ?>">Learn More &rarr;</a>
             </div>
@@ -72,7 +72,7 @@ get_header();
         endif;
         ?>
         <div class="col-md-3 text-center p-4 service">
-          <p class="h2 m-4 pt-4">See What Else We Can Do</p>
+          <p class="h2 h2-serif m-4 pt-4">See What Else We Can Do</p>
           <button class="btn btn-gofish-outline">More Services</button>
         </div>
       </div>
