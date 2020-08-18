@@ -11,9 +11,9 @@ This theme depends on a handful of additional tools and pieces of software to fu
 * [Contact form 7](https://contactform7.com/) - Contact Form 7 was used to generate the contact form near the bottom of the page.
 
 In addition to the essential plugins listed above, I've also installed a handful of additional plugins. Those plugins are:
-* Smush - Automatic image compression.
-* WP Super Cache - Page caching and other performance improvements.
-* Yoast SEO - SEO management plugin.
+* [Smush](https://wordpress.org/plugins/wp-smushit/) - Automatic image compression.
+* [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) - Page caching and other performance improvements.
+* [Yoast SEO](https://yoast.com/) - SEO management plugin.
 
 ## Menu Locations
 The theme provides six Wordpress editable menu locations:
