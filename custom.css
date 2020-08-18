@@ -1,69 +1,13 @@
-/* Sitewide */
+/* Sitewide Utility Classes */
 body {
 	color:#284157;
 	font-family: 'Sen', sans-serif;
 }
-
-/* Home Classes */
-#home-hero {
-	background-size: cover;
-	background-position:center center;
-}
-
-/* Form Styles */
-.wpcf7 input[type="text"],
-.wpcf7 input[type="email"]{
-	border-top:none;
-	border-right:none;
-	border-left:none;
-	padding:0.5rem
-}
-.wpcf7 input[type="text"]:focus,
-.wpcf7 input[type="email"]:focus{
-	border-bottom:1px solid #659cd1;
-	transition:0.2s;
-}
-
-.wpcf7 textarea {
-	padding:0.5rem;
-}
-
-.wpcf7 textarea:focus {
-	border:1px solid #659cd1;
-	transition: 0.2s;
-}
-
-.wpcf7 input[type="submit"]{
-	background-color:#659cd1;
-	color:#fff;
-	border-color:#659cd1;
-	border-radius:30px;
-	padding:1rem 4rem;
-}
-
-.wpcf7 input[type="submit"]:hover{
-	background-color: #6c757d;
-	border-color: #6c757d;
-	transition:0.2s;
-}
-
-/* Typography Classes */
-.display-1, .display-2, .display-3, .display-4, .h1-serif, .h2-serif, .h3-serif, .h4-serif, .h5-serif, .h6-serif {
-	font-family: utopia-std;
-}
-
-#menu-social-and-privacy>li>a {
-	color:#284157;
-}
-
-.nav-link {
-	color:#284157 !important;
-}
-
-/* Utility Classes */
 section {
-	margin-top:5rem;
-	margin-bottom:5rem;
+	margin-top:3rem;
+	margin-bottom:3rem;
+	padding-top:3rem;
+	padding-bottom:3rem;
 }
 
 .bg-gofish {
@@ -127,4 +71,109 @@ section {
 .list-unstyled > li > a:hover {
 	text-decoration:none;
 	color:#666;
+}
+
+/* Home Classes */
+#home-hero {
+	background-size: cover;
+	background-position:center center;
+}
+
+#client-section {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1rem;
+	padding-bottom:0;
+}
+
+#services-section {
+	background:#f3f3f4;
+}
+
+.service-first {
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.service-top {
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.service-top-last {
+	border-bottom:1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.service-bottom-first {
+	border-top: 1px solid #fff;
+	border-right:1px solid #fff; 
+}
+
+.service-bottom {
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.service-last {
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.award-bg {
+	background: #e8f0f8;
+	border-radius:15px;
+	min-height:210px;
+}
+
+/* Form Styles */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"]{
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	padding:0.5rem
+}
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus{
+	border-bottom:1px solid #659cd1;
+	transition:0.2s;
+}
+
+.wpcf7 textarea {
+	padding:0.5rem;
+}
+
+.wpcf7 textarea:focus {
+	border:1px solid #659cd1;
+	transition: 0.2s;
+}
+
+.wpcf7 input[type="submit"]{
+	background-color:#659cd1;
+	color:#fff;
+	border-color:#659cd1;
+	border-radius:30px;
+	padding:1rem 4rem;
+}
+
+.wpcf7 input[type="submit"]:hover{
+	background-color: #6c757d;
+	border-color: #6c757d;
+	transition:0.2s;
+}
+
+/* Typography Classes */
+.display-1, .display-2, .display-3, .display-4, .h1-serif, .h2-serif, .h3-serif, .h4-serif, .h5-serif, .h6-serif {
+	font-family: utopia-std;
+}
+
+#menu-social-and-privacy>li>a {
+	color:#284157;
+}
+
+.nav-link {
+	color:#284157 !important;
 }
