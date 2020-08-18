@@ -15,9 +15,9 @@
 <footer id="colophon" class="site-footer">
   <div class="site-info mt-n4">
     <div class="container">
-      <div class="row py-4">
+      <div class="row pb-4 mb-4">
         <div class="col-md-6 text-center">
-          <h3 class="">Let's Get in Touch</h3>
+          <h3 class="h3-serif">Let's Get in Touch</h3>
           <button class="btn btn-oval btn-gofish-outline my-4">Contact Us</button>
           <p class="text-gofish">(703) 596-1353</p>
         </div>
